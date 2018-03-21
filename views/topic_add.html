@@ -1,0 +1,23 @@
+{{template "header"}}
+<title>服务器信息-自动化运维</title>
+
+<body>
+{{template "navbar" .}}
+
+<div class="container">
+    <h1>添加服务器信息</h1>
+    <form method="post" action="/topic/">
+        <div class="form-group">
+            <label>信息</label>
+            <input type="text" name="title" class="form-control">
+            <label>信息2</label>
+            <input type="text" name="title2" class="form-control" value="默认">
+        </div>
+        <div class="form-group">
+            <label>内容</label>
+            <textarea name="content" cols="30" rows="10" class="form-control">默认</textarea>
+        </div>
+        <button type="submit" class="btn btn-default">添加</button>
+    </form>
+</div>
+</body>
